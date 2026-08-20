@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # Define a rota GET /login que aponta para o controller sessions e ação new
+  get "login", to: "sessions#new", as: :login
 end
